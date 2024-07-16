@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations_masterclass/screens/assignment_screen.dart';
 
 import 'implicit_animations_screen.dart';
 
@@ -33,6 +34,20 @@ class MenuScreen extends StatelessWidget {
               },
               child: const Text(
                 "Implicit Animations",
+              ),
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                goToPage(
+                  context,
+                  const AssignmentScreen(),
+                );
+              },
+              child: const Text(
+                "Assignment Animations",
               ),
             )
           ],
