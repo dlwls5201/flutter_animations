@@ -28,7 +28,7 @@ class _ImplicitAnimationsScreenState extends State<ImplicitAnimationsScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            /*AnimatedContainer(
+            AnimatedContainer(
               curve: Curves.elasticInOut,
               duration: const Duration(seconds: 2),
               transform: Matrix4.rotationZ(_visible ? 1 : 0),
@@ -39,8 +39,8 @@ class _ImplicitAnimationsScreenState extends State<ImplicitAnimationsScreen> {
                 color: _visible ? Colors.red : Colors.amber,
                 borderRadius: BorderRadius.circular(_visible ? 100 : 0),
               ),
-            ),*/
-            TweenAnimationBuilder(
+            ),
+            /*TweenAnimationBuilder(
               tween: ColorTween(
                 begin: Colors.blue,
                 end: Colors.red,
@@ -53,7 +53,7 @@ class _ImplicitAnimationsScreenState extends State<ImplicitAnimationsScreen> {
                   colorBlendMode: BlendMode.colorBurn,
                 );
               },
-            ),
+            ),*/
             const SizedBox(
               height: 50,
             ),
