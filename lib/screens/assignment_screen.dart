@@ -39,28 +39,29 @@ class _AssignmentScreenState extends State<AssignmentScreen> {
         title: const Text("Assignment"),
       ),
       body: Center(
-          child: SizedBox(
-        width: size.width * 0.6,
-        height: size.width * 0.6,
-        child: Stack(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                color: Colors.red,
-                shape: _changeState ? BoxShape.circle : BoxShape.rectangle,
+        child: SizedBox(
+          width: size.width * 0.6,
+          height: size.width * 0.6,
+          child: Stack(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.red,
+                  shape: _changeState ? BoxShape.circle : BoxShape.rectangle,
+                ),
               ),
-            ),
-            AnimatedAlign(
-              alignment: _changeState ? Alignment.topLeft : Alignment.topRight,
-              duration: Duration(seconds: _animationDurationSecond),
-              child: Container(
-                width: 15,
-                color: _changeState ? Colors.black : Colors.white,
+              AnimatedAlign(
+                alignment: _changeState ? Alignment.topLeft : Alignment.topRight,
+                duration: Duration(seconds: _animationDurationSecond),
+                child: Container(
+                  width: 15,
+                  color: _changeState ? Colors.black : Colors.white,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
-      )),
+      ),
     );
   }
 }
