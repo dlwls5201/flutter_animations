@@ -4,6 +4,7 @@ import 'package:flutter_animations_masterclass/screens/swiping_cards_screen.dart
 
 import 'apple_watch_screen.dart';
 import 'assignment/assignment_screen_3.dart';
+import 'assignment/assignment_screen_4.dart';
 import 'implicit_animations_screen.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -91,7 +92,7 @@ class MenuScreen extends StatelessWidget {
               onPressed: () {
                 goToPage(
                   context,
-                  const AssignmentScreen3(),
+                  const AssignmentScreen4(),
                 );
               },
               child: const Text(
