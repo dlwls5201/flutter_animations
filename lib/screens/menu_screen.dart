@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animations_masterclass/screens/explicit_animations_screens.dart';
+import 'package:flutter_animations_masterclass/screens/swiping_cards_screen.dart';
 
 import 'apple_watch_screen.dart';
 import 'assignment/assignment_screen_3.dart';
@@ -67,6 +68,20 @@ class MenuScreen extends StatelessWidget {
               },
               child: const Text(
                 "Apple Watch",
+              ),
+            ),
+            const SizedBox(
+              height: 16,
+            ),
+            ElevatedButton(
+              onPressed: () {
+                goToPage(
+                  context,
+                  const SwipingCardsScreen(),
+                );
+              },
+              child: const Text(
+                "Swiping Cards",
               ),
             ),
             const SizedBox(
